@@ -1,0 +1,15 @@
+@import "ember-bootstrap/bootstrap";
+@import "./simplex/variables";
+@import "./simplex/bootswatch";
+
+body {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+}
+
+.maztek {
+  color: red;
+}

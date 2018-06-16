@@ -1,18 +1,16 @@
-module.exports = function() {
-  return {
-    integrations: [
-      {
-        name: 'GoogleAnalytics',
-        config: {
-          id: 'UA-120955643-1',
-          remarketing: false,
-          ecommerce: false,
-          enhancedEcommerce: false,
-          set: {
-            anonymizeIp: false
-          }
+module.exports = {
+  integrations: [
+    {
+      name: 'GoogleAnalytics',
+      config: {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        remarketing: false,
+        ecommerce: false,
+        enhancedEcommerce: false,
+        set: {
+          anonymizeIp: false
         }
-      },
-    ]
-  };
+      }
+    },
+  ]
 };
