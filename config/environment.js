@@ -24,6 +24,7 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: require('./initializers/content-security-policy'),
     firebase: require('./initializers/firebase'),
+    analytics: require('./initializers/analytics'),
   };
 
   if (environment === 'development') {
